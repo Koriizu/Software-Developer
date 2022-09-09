@@ -6,5 +6,6 @@ aantalkortingsbonnen = 3
 korting = 1.50
 
 Totaalprijs = (aantalcroissanten * prijscroissant) + (aantalstokbroden * prijsstokbrood) - korting
+Afgerondeprijs = round(Totaalprijs, 2)
 
-print("De feestlunch kost je bij de bakker", Totaalprijs, "euro voor de", aantalcroissanten, "croissantjes en de ", aantalstokbroden, "stokbroden als de", aantalkortingsbonnen, "nog geldig zijn!")
+print(f"De feestlunch kost je bij de bakker {Afgerondeprijs} euro voor de {aantalcroissanten} croissantjes en de {aantalstokbroden} stokbroden als de {aantalkortingsbonnen} nog geldig zijn!")

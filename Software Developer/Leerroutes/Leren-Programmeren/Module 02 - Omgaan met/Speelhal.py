@@ -7,4 +7,4 @@ aantalminuten = gameseat5min * 5
 totaalprijs = (aantalpersonen * toegangsticket) + (gameseatprijs * gameseat5min * aantalpersonen)
 afgeronde_prijs = round(totaalprijs, 2)
 
-print("Dit geweldige dagje-uit met", aantalpersonen , "in de speel hal met", aantalminuten, "minuten VR kost je maar",  afgeronde_prijs, "euro")
+print(f"Dit geweldige dagje-uit met {aantalpersonen} in de speel hal met {aantalminuten} minuten VR kost je maar {afgeronde_prijs} euro")
