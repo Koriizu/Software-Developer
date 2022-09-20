@@ -1,12 +1,21 @@
 
+from ast import While
+from operator import truediv
+
+
 naam = input("Wat is uw naam?: ")
+if naam == 'Kevin'.lower():
+    raise NameError('U bent jammer genoeg veelste slim voor een baan')
+
 
 leeftijd = input("Wat is uw leeftijd?: ")
 
 lievelings_dier = input("Wat is uw favoriete circusdier?: ")
 
-gender = input("Geslacht: Man/Vrouw?: ")
-gender = gender.lower()
+gender = input("Geslacht: Man/Vrouw?: ").lower()
+if not gender in ('man' ,'vrouw'):
+    raise NameError("Er zijn maar 2 genders, probeer opnieuw")
+
 
 vraag1_ervaring = input("Heeft u praktijkervaring met dieren-dressuur?: ")
 vraag1_ervaring = vraag1_ervaring.lower()
@@ -30,7 +39,9 @@ ervaring = False
 if ((vraag1_ervaring == "ja") and (int(ervaring1_tijd) > 4)) or ((vraag2_ervaring == "ja") and (int(ervaring2_tijd) > 2)) or ((vraag3_ervaring == "ja") and (int(ervaring3_tijd) > 3)):
     ervaring = True
 
-vraag_diploma = input("Bent u in bezit van een Diploma MBO-4 ondernemen?: ")
+vraag_diploma = input("Bent u in bezit van een Diploma MBO-4 ondernemen?: ").lower()
+if not vraag_diploma in ('ja'):
+    raise NameError("U mag niet verder zonder diploma")
 
 vraag_rijbewijs = input("Bent u in bezit van een geldig vrachtwagen-rijebewijs?: ")
 

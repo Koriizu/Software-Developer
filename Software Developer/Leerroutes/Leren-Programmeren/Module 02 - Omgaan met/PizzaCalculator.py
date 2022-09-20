@@ -1,5 +1,8 @@
 # Arda Ozcoban
 # De Pizza Calculator
+from ast import While
+
+
 print ('''----------------------Welkom bij Dominarda----------------------
 Wat mag het zijn?''')
 # Hier word laten zien wat op het menu staat
@@ -13,9 +16,27 @@ prijs_medium = 7.50
 prijs_large = 9.99
 
 # Hier kiest de klant hoeveel die van elke afmeting pizza's wilt
-aantal_small = int(input("Hoeveel small pizza's?: "))
-aantal_medium = int(input("Hoeveel medium pizza's?: "))
-aantal_large = int(input("Hoeveel large pizza's?: "))
+while True:
+    try:
+        aantal_small = int(input("Hoeveel small pizza's?: "))
+        break
+    except:
+        print("Dat is geen aantal in nummers!")
+
+while True:
+    try:
+        aantal_medium = int(input("Hoeveel medium pizza's?: "))
+        break
+    except:
+        print("Dat is geen aantal in nummers!")
+    
+while True:
+    try:
+        aantal_large = int(input("Hoeveel large pizza's?: "))
+        break
+    except:
+        print("Dat is geen aantal in nummers!")
+
 
 prijs_totaal = prijs_small * aantal_small + prijs_medium * aantal_medium + prijs_large * aantal_large
 afgeronde_totaalbedrag = round(prijs_totaal, 2)
