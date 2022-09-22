@@ -1,8 +1,4 @@
 
-from ast import While
-from operator import truediv
-
-
 naam = input("Wat is uw naam?: ")
 if naam == 'Kevin'.lower():
     raise NameError('U bent jammer genoeg veelste slim voor een baan')

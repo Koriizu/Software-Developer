@@ -15,11 +15,11 @@ prijs_small = 4.99
 prijs_medium = 7.50
 prijs_large = 9.99
 
+aantal_small = -1
 # Hier kiest de klant hoeveel die van elke afmeting pizza's wilt
-while True:
+while aantal_small == -1:
     try:
         aantal_small = int(input("Hoeveel small pizza's?: "))
-        break
     except:
         print("Dat is geen aantal in nummers!")
 
