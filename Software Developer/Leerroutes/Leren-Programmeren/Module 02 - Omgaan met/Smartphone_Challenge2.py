@@ -3,14 +3,17 @@ iphone_prijs = round(float(input("Hoe duur is de Iphone? ")), 2)
 samsung_prijs = round(float(input("Hoe duur is de Samsung? ")), 2)
 zenfone_prijs = round(float(input("Hoe duur is de ZenFone? ")), 2)
 
-if ((samsung_prijs > 900) and (iphone_prijs > 900)):
+if ((samsung_prijs > 900) and (iphone_prijs > 900) and (zenfone_prijs > 900)):
     print("Het advies is dus geen telefoons te kopen, ze zijn te duur.")
-    
+
+elif ((samsung_prijs > 900) and (iphone_prijs < 900)and (zenfone_prijs < 900)):
+    print("Het advies is om de ZenFone te kopen, deze is onder de 900 euro en goedkoper dan de Iphone en de Samsung.")
+
 elif ((samsung_prijs > 900) and (iphone_prijs < 900)):
-    print("Het advies is om de Iphone te kopen, deze is onder de 900 euro en goedkoper dan de Samsung.")
+    print("Het advies is om de Iphone te kopen, deze is onder de 900 euro en goedkoper dan de ZenFone en Samsung.")
 
 elif ((iphone_prijs > 900) and (samsung_prijs < 900)):
-    print("Het advies is om de Samsung te kopen, deze is onder de 900 euro en goedkoper dan de Iphone.")
+    print("Het advies is om de Samsung te kopen, deze is onder de 900 euro en goedkoper dan de ZenFone en Iphone.")
 
 elif (((iphone_prijs - zenfone_prijs) > 0 < 100) and ((samsung_prijs - zenfone_prijs) > 0 < 100)):
     print("Het advies is om de ZenFone te kopen, deze is namelijk 100 euro goedkoper dan de Iphone zowel als de Samsung.")
