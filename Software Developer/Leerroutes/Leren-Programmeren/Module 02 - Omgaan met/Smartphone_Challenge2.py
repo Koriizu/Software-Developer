@@ -12,7 +12,7 @@ elif ((samsung_prijs > 900) and (iphone_prijs < 900)):
 elif ((iphone_prijs > 900) and (samsung_prijs < 900)):
     print("Het advies is om de Samsung te kopen, deze is onder de 900 euro en goedkoper dan de Iphone.")
 
-elif (((iphone_prijs - zenfone_prijs) < 100) and ((samsung_prijs - zenfone_prijs) < 100)):
+elif (((iphone_prijs - zenfone_prijs) > 0 < 100) and ((samsung_prijs - zenfone_prijs) > 0 < 100)):
     print("Het advies is om de ZenFone te kopen, deze is namelijk 100 euro goedkoper dan de Iphone zowel als de Samsung.")
 
 else:
