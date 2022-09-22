@@ -16,7 +16,7 @@ elif (((iphone_prijs - zenfone_prijs) > 0 < 100) and ((samsung_prijs - zenfone_p
     print("Het advies is om de ZenFone te kopen, deze is namelijk 100 euro goedkoper dan de Iphone zowel als de Samsung.")
 
 else:
-    if ((iphone_prijs > samsung_prijs) and not (((iphone_prijs - zenfone_prijs) < 100) and ((samsung_prijs - zenfone_prijs) < 100))):
+    if ((iphone_prijs > samsung_prijs) and not (((iphone_prijs - zenfone_prijs) > 0 < 100) and ((samsung_prijs - zenfone_prijs) > 0 < 100))):
             verschil = round(iphone_prijs - samsung_prijs, 2)
             if verschil > 50:
                 print(f"""
@@ -28,7 +28,7 @@ else:
                 Omdat u een lichte voorkeur voor de Iphone heeft, raden we je aan om de Iphone te kopen.
                 Deze is namelijk maar {verschil} euro duurder dan de Samsung.""")
 
-    elif ((samsung_prijs > iphone_prijs) and not (((iphone_prijs - zenfone_prijs) < 100) and ((samsung_prijs - zenfone_prijs) < 100))):
+    elif ((samsung_prijs > iphone_prijs) and not (((iphone_prijs - zenfone_prijs) > 0 < 100) and ((samsung_prijs - zenfone_prijs) > 0 < 100))):
             verschil = round(samsung_prijs - iphone_prijs, 2)
             print(f"""
             De Samsung is het duurst, de telefoon kost: {samsung_prijs} Euro.
