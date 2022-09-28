@@ -40,7 +40,7 @@ Son, you're finally ready.. You're ready to set sail and travel the world to fin
 
     else:
         delay_print1("After deciding to not eat the fruit, you bring the fruit to your home.")
-        delay_print2("...")
+        delay_print2("...") 
         
 else:
     print("That's too bad.")
