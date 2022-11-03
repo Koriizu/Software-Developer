@@ -20,7 +20,7 @@ if answer in ("yes", "y", "ja"):
     delay_print2("""
 You are in the middle of a zombie apocalypse in 2024 and you are all alone in a hotel filled with zombies.
 You must get to the top of the building for the rescue brigade to save you.
-Do what you must to survive.
+Do what you must to survive. 
     """)
     delay_print2("""
 You exit your room quietly..
@@ -62,7 +62,7 @@ Run or fight? """)
         delay_print2("""
     After walking up to the next floor you discover that the stairs is blocked here.
     You can either go up from the balconies or go back down and try to take the elevator up..
-    Go back down or up?
+    Go back down or up? 
         """)
         answer = input().lower().strip()
         if answer == "up":
