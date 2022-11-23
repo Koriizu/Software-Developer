@@ -9,7 +9,7 @@ for l in range(8):
     robotArm.moveRight()
 for f in range(9):
     robotArm.grab()
-    color = robotArm.scan()
+    color = robotArm.scan() +
     if color == "white":
         robotArm.moveRight()
         robotArm.drop()

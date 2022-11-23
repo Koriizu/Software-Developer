@@ -3,12 +3,11 @@ from RobotArm import RobotArm
 robotArm = RobotArm('exercise 9')
 
 # Jouw python instructies zet je vanaf hier:
-robotArm.speed = 2
+robotArm.speed = 1
 
-x = 1
 
-for y in range(4): 
-    for z in range(x):
+for y in range(1,5): 
+    for z in range(y):
         robotArm.grab()
         for y in range(5):
             robotArm.moveRight()
@@ -16,7 +15,7 @@ for y in range(4):
         for y in range(5):
             robotArm.moveLeft()
     robotArm.moveRight()
-    x+=1  
+
     
 
 
