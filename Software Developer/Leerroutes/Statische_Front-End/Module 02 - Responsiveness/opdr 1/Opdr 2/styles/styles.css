@@ -1,0 +1,38 @@
+.first{
+    font-size: large;
+    background-color: #7effd4;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.second{
+    font-size: medium;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #bdb76c;
+}
+
+.first h2{
+    color: #ab4834;
+}
+
+h1{
+    color: #302bd4;
+    margin-left: 100px;
+}
+
+.second h2{
+    color: #1f7204;
+}
+
+body{
+    border: grey solid 50px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}

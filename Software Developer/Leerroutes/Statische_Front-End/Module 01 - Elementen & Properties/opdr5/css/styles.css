@@ -1,0 +1,69 @@
+div{
+    width: 42%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 32px;
+    padding-top:40px
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 32px;
+    padding-top:40px
+}
+
+p{
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.abc{
+    font-size: 24px;
+    line-height: 32px;
+    width: 100%;
+}
+
+ul{
+    font-size: 20px;
+    line-height: 26px;
+    display: grid;
+    gap: 10px;
+}
+
+ol{
+    font-size: 20px;
+    line-height: 26px;
+}
+
+ol li{
+    margin-bottom: 20px;
+}
+
+.dfg{
+    font-size: 20px;
+    line-height: 26px;
+    border: 4px;
+    background-color: #def6ed;  
+    width: 100%;
+}
+
+.resize{
+    width: 80%;
+    height: auto;
+    
+}
+
+hr{
+    color: lightgray;
+}

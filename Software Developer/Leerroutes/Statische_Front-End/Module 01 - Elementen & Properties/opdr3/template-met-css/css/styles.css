@@ -1,0 +1,11 @@
+div{
+    border-width: 20px;
+    border-style: dashed;
+    border-color: red;
+    background-color: yellow;
+    margin: 40px;
+    padding: 40px;
+    width: 300px;
+    height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}

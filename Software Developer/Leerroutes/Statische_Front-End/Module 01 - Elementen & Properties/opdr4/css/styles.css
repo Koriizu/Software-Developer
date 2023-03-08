@@ -1,0 +1,30 @@
+h1{
+    color: aqua;
+    background-color: black;
+    text-align: center;
+}
+
+h2{
+    color: darkred;
+}
+
+h3{
+    color: darkgreen;
+}
+
+
+
+.ka{
+    background-color: white;
+    margin: 50px;
+    padding: 10px;
+}
+
+.ba{
+    background-color: green;
+    padding: 50px;
+}
+
+.abc:hover{
+    color: blueviolet;
+}
