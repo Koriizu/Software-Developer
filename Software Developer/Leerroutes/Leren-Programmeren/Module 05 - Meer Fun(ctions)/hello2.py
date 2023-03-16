@@ -1,5 +1,9 @@
 def hello(test):
-    for x in range(test+1):
-        print(f"{x}. Hello From Function Town.")
+    iets = ''
+    for x in range(1,test+1):
+        iets += f'{x}.Hello From Function Town.\n'
+    return iets
 
-hello(8)
+iets = hello(8)
+
+print(iets)
