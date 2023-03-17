@@ -1,3 +1,9 @@
+Vandaag (03/17/2023):
+
+Verder aan de game retry
+Horeca App af?
+
+
 Vandaag (03/10/2023):
 
 Horeca app
