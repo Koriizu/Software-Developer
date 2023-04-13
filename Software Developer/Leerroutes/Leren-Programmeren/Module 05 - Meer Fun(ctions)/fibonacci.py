@@ -10,5 +10,9 @@ def guldensnede(fibonacci):
     Een_A_Laatste = fibonacci[-2]
     return Laatste / Een_A_Laatste
 
-print(Fibonaccibreken(48))
-print(guldensnede(Fibonaccibreken(48)))
+print(Fibonaccibreken(10))
+print(guldensnede(Fibonaccibreken(10)))
+print(guldensnede(Fibonaccibreken(30)))
+print(guldensnede(Fibonaccibreken(42)))
+print(guldensnede(Fibonaccibreken(10000)))
+print(guldensnede(Fibonaccibreken(20000)))

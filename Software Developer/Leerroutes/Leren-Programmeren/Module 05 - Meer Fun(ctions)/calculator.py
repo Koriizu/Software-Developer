@@ -10,6 +10,7 @@ def multiplication(number1, number2):
 def division(number1, number2):
     return number1 / number2
 
+
 firstRound = True
 nr1 = False
 nr2 = False
@@ -17,13 +18,13 @@ nr2 = False
 while True:
     
     if firstRound == True:
-        choice = input("Wat wilt u doen?\n A) getallen optellen\n B) getallen aftrekken\n C) getallen vermenigvuldigen\n D) getallen delen\n E) getal ophogen\n F) getal verlagen\n G) getal verdubbelen\n H) getal halveren? \n").lower()
+        choice = input("Wat wilt u doen?\n A) getallen optellen\n B) getallen aftrekken\n C) getallen vermenigvuldigen\n D) getallen delen\n E) getal ophogen\n F) getal verlagen\n G) getal verdubbelen\n H) getal halveren? \n J) getal kwadraterena").lower()
     else:
-        choice = input(f"Wat wilt u doen? met {antwoord}\n A) getallen optellen\n B) getallen aftrekken\n C) getallen vermenigvuldigen\n D) getallen delen\n E) getal ophogen\n F) getal verlagen\n G) getal verdubbelen\n H) getal halveren? \n I) niets \n").lower()
+        choice = input(f"Wat wilt u doen? met {antwoord}\n A) getallen optellen\n B) getallen aftrekken\n C) getallen vermenigvuldigen\n D) getallen delen\n E) getal ophogen\n F) getal verlagen\n G) getal verdubbelen\n H) getal halveren? \n I) niets \n J) getal kwadraterena").lower()
         n1 = antwoord
         nr2 = False
 
-    if choice in ("a", "b", "c", "d", "e", "f", "g", "h"):
+    if choice in ("a", "b", "c", "d", "e", "f", "g", "h","j"):
         firstRound = False
         if nr1 == False:
             n1 = float(input("Welk getal? \n"))
@@ -42,6 +43,8 @@ while True:
             n2 = 1
         if choice in ("g", "h"):
             n2 = 2
+        if choice in ('j'):
+            n2 = n1
         nr1, nr2 = True, True
 
     if choice == "a":
@@ -68,6 +71,8 @@ while True:
     elif choice == "h":
         antwoord = division(n1, n2) 
         print(f"{n1} : {n2} = {antwoord}")
+    elif choice == "j":
+        antwoord = multiplication(n1, n2)
     elif choice == "i" and firstRound == False:
         print("Einde berekening. \n")
         break
