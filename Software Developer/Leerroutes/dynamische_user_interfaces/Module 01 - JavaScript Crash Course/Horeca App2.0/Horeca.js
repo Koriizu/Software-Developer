@@ -16,21 +16,21 @@ function toevoegen(order, choice, quantity){
 
 
 
-abc = true;
+bestellen = true;
 
 
-while (abc) {
+while (bestellen) {
     
     let choice = prompt("Wat wilt u bestellen? (Toets 'stop' om de bon uit te printen)");
 
     if (choice == 'stop') {
-        abc = false
+        bestellen = false;
         break    
     }else if (choice in drinken){
-    let quantity = prompt("Hoeveel wilt u van " + choice + "?");
-    toevoegen(order, choice, quantity)
+        let quantity = prompt("Hoeveel wilt u van " + choice + "?");
+        toevoegen(order, choice, quantity);
     }else if (!(choice in drinken)) {
-    alert("Dit ken ik niet!");
+        alert("Dit ken ik niet!");
     }
 
 }
@@ -49,6 +49,5 @@ function bon(){
     document.getElementById('eindprijs').innerHTML = 'Het totaal bedrag is: ' + total.toFixed(2) + ' euro';
 }
 
-if (abc == false) {
-    bon()
-}
+
+bon()

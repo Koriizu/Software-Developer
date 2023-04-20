@@ -2,6 +2,11 @@ import random
 import time
 def game():
     class Player():
+        hp = 100
+        energy = 0
+        def __init__(self,name):
+            self.name = name
+            
         def normal_atk(self):
             attack = random.randint(0, 16)
             return attack
@@ -13,8 +18,19 @@ def game():
         def healing(self):
             healing = random.randint(10, 35)
             return healing
-
+        
+        def perform_normal_attack(self, foe):
+            player_normal_attack = self.normal_atk()
+            foe.hp = foe.hp - player_normal_attack
+            player_energy += 10
+            time.sleep(1)
+            print(f"\n {name} just did {player_normal_attack} damage!")
+            print(f"{name} now has {player_hp} health and {player_energy} energy!")
+            time.sleep(1)
+            print(f"The {foe.name} now has {comp_hp} health and {comp_energy} energy!")
              
+        
+
     def first_turn():
         go = random.randint(0, 2)
         if go == 0:
@@ -33,8 +49,8 @@ def game():
         comp_hp = 100
         comp_energy = 0
 
-        player = Player()
-        comp = Player()
+        player = Player('arda')
+        comp = Player('comp')
 
         while player_hp > 0 and comp_hp > 0:
             print(f"\n{turn}'s turn")
@@ -42,14 +58,15 @@ def game():
                 try:
                     action = int(input(f"{name}, please choose an action:\n1) Normal Attack\n2) Special Attack\n3) Heal\n"))
                     if action == 1:
-                        player_normal_attack = player.normal_atk()
-                        comp_hp = comp_hp - player_normal_attack
-                        player_energy += 10
-                        time.sleep(1)
-                        print(f"\n {name} just did {player_normal_attack} damage!")
-                        print(f"{name} now has {player_hp} health and {player_energy} energy!")
-                        time.sleep(1)
-                        print(f"The Computer now has {comp_hp} health and {comp_energy} energy!")
+                        player.perform_normal_attack(comp)
+                        # player_normal_attack = player.normal_atk()
+                        # comp_hp = comp_hp - player_normal_attack
+                        # player_energy += 10
+                        # time.sleep(1)
+                        # print(f"\n {name} just did {player_normal_attack} damage!")
+                        # print(f"{name} now has {player_hp} health and {player_energy} energy!")
+                        # time.sleep(1)
+                        # print(f"The Computer now has {comp_hp} health and {comp_energy} energy!")
                         turn = 'comp'
                     elif action == 2 and player_energy >= 20:
                         player_special_attack = player.spec_attack()
