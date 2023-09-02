@@ -156,7 +156,7 @@ body{
     transition: transform .2s;
 }
 
-.totalwar:hover{
+.LoL:hover{
     transform: scale(1.5);
 }
 
